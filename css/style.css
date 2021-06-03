@@ -1,0 +1,194 @@
+/* start reset */
+a {
+  text-decoration: none;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.img-responsive {
+  max-width: 100%;
+  display: block; /*scoate spatiul gol de sub imagine*/
+}
+/* end reset */
+.container {
+  max-width: 1024px;
+  width: 80%;
+  margin: 0 auto;
+  /* border: 5px solid black; */
+}
+.row {
+  /* border: 5px solid red; */
+  display: flex;
+  flex-wrap: wrap; /* necesar pt responsive*/
+}
+.col {
+  flex: 1;
+  /* border: 5px solid green; */
+}
+span {
+  width: 500px;
+  padding: 500px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 25px;
+}
+/* primul blok */
+.unu {
+  background-color: #0e1431;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 20px;
+}
+.unu h2 {
+  text-align: left;
+}
+.primul {
+  display: block;
+  display: inline-block;
+  margin: 50px auto;
+  width: 400px;
+  padding: 10px 20px;
+  background-color: #2bb686;
+  color: #ffffe6;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.418);
+  text-align: center;
+}
+.fa-windows {
+  font-size: 30px;
+}
+.fa-apple {
+  font-size: 30px;
+}
+
+/*al doilea blok*/
+
+.doi {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-content: center;
+  padding: 10px;
+  /* background-color: #00e673; */
+  color: #ffffe6;
+
+  text-align: center;
+}
+.titludoi {
+  padding: 10px;
+}
+.secund {
+  padding: 10px 20px;
+  margin: 0 auto;
+  width: 200px;
+  border: 1px solid grey;
+  text-align: left;
+  font-size: 18px;
+  color: black;
+  line-height: 2;
+}
+/*al treilea block*/
+.spatetrei {
+  margin-right: -15px;
+  margin-left: -15px;
+  background-color: blueviolet;
+}
+.trei {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: stretch;
+  align-content: center;
+  padding: 10px;
+  background-color: #dfedf5;
+  font-size: 20px;
+}
+
+/* blocul patru */
+.patru {
+  /* flex: 1; */
+  font-size: 20px;
+}
+.patru .fa-apple {
+  font-size: 70px;
+  text-align: center;
+}
+.microsoft {
+  width: 170px;
+}
+.adobe {
+  width: 170px;
+}
+
+.anc1 {
+  width: 170px;
+}
+
+/* blok cinci */
+.cinci {
+  background-color: #dfedf5;
+  text-align: center;
+  font-size: 20px;
+}
+
+
+/* bloc sase */
+.sase {
+  display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: space-around;
+
+@media (max-width: 1024px) {
+  /*tablete*/
+  /* tratat ca un css separat dar conditionat de latimea data*/
+  .container {
+    width: 94%;
+    max-width: 100%;
+    background-color: grey;
+  }
+  .sfert {
+    flex: unset;
+    width: 50%;
+  }
+}
+@media (max-width: 1024px) and (orientation: portrait) {
+  body {
+    background-color: pink;
+  }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+  body {
+    background-color: green;
+  }
+}
+@media (max-width: 767px) {
+  /* smartphone */
+  .container {
+    width: 100%;
+    background-color: darkkhaki;
+  }
+  .sfert {
+    width: 100%;
+  }
+  .treime,
+  .jumatate {
+    flex: unset;
+    width: 100%;
+  }
+}
+@media (min-width: 2000px) {
+  /* ce ii mai mare de 2k */
+  .container {
+    background-color: red;
+  }
+}
